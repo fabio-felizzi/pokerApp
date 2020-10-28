@@ -1,5 +1,3 @@
-/* eslint-disable no-use-before-define */
-/* eslint-disable class-methods-use-this */
 export class PokerHand {
   compareWith() {
     return Result.TIE;
