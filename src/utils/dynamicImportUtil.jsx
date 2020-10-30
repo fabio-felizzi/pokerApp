@@ -1,8 +1,7 @@
 /* eslint-disable react/jsx-props-no-spreading */
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-import { importComponent } from 'Services/dynamicImportService';
-import StyledTitleBlock from 'StyledComponents/StyledTitleBlock';
+import React, { Component } from "react";
+import PropTypes from "prop-types";
+import { importComponent } from "Services/dynamicImportService";
 
 class DynamicImportUtil extends Component {
   constructor() {
@@ -26,15 +25,11 @@ class DynamicImportUtil extends Component {
   render() {
     const { component: LoadedComponent } = this.state;
 
-    return LoadedComponent
-      ? <LoadedComponent {...this.props} />
-      : (
-        <StyledTitleBlock
-          title="Loading"
-          subtitle=""
-          backgroundColor="white"
-        />
-      );
+    return LoadedComponent ? (
+      <LoadedComponent {...this.props} />
+    ) : (
+      <div>loading...</div>
+    );
   }
 }
 
