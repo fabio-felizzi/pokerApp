@@ -16,3 +16,8 @@ The result of your poker hand compare can be one of these 3 options:
 - WIN should return the integer `1`
 - LOSS should return the integer `2`
 - TIE should return the integer `3`
+
+## To run
+
+- `npm install`
+- `npm run test`
